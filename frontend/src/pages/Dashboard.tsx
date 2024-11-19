@@ -80,7 +80,7 @@ const DashboardPage = () => {
                 </button>
               </div>
 
-              <Link to="add-post">
+              <Link to="add-dataset">
                 <button className="bg-primary text-primary_text hover:bg-border hover:text-primary px-4 py-2 rounded-lg flex items-center">
                   <FaPlus className="mr-2" /> Add Dataset
                 </button>

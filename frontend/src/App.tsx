@@ -7,6 +7,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import DashboardPage from "./pages/Dashboard.js";
+import AddDatasetPage from "./components/AddDataSet.js";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
       <Route index element={<IndexPage />} />
       <Route path="/dashboard">
         <Route index element={<DashboardPage />} />
+        <Route path="add-dataset" element={<AddDatasetPage />} />
       </Route>
     </Route>
   )
