@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const MainHero = () => {
   const { mainHero } = config;
   return (
-    <main className="mx-auto px-4 min-h-screen">
+    <main className="mx-auto px-4">
       <div className="sm:text-center lg:text-left">
-        <h1 className="text-3xl tracking-tight font-extrabold text-primary_text sm:text-5xl lg:text-6xl">
+        <h1 className="text-3xl tracking-tight font-extrabold text-primary_text sm:text-5xl lg:text-5xl">
           <span className="block xl:inline">{mainHero.title}</span>{" "}
           <span className={`block text-primary xl:inline`}>
             {mainHero.subtitle}
