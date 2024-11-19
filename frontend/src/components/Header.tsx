@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
+import BlockchainLoginButton from "./BlockChainLoginButton";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,6 +46,9 @@ const Header = () => {
             <Link to="/community" className="text-primary_text hover:text-secondary text-sm font-medium md:font-semibold md:text-md">
               Community
             </Link>
+          </li>
+          <li className="mx-2">
+            <BlockchainLoginButton />
           </li>
         </ul>
       </div>
