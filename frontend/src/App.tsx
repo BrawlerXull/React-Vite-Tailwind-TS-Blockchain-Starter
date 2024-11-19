@@ -6,11 +6,15 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import DashboardPage from "./pages/Dashboard.js";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
       <Route index element={<IndexPage />} />
+      <Route path="/dashboard">
+        <Route index element={<DashboardPage />} />
+      </Route>
     </Route>
   )
 );
