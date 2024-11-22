@@ -9,6 +9,7 @@ import {
 import DashboardPage from "./pages/Dashboard.js";
 import AddDatasetPage from "./components/AddDataSet.js";
 import Community from "./components/Community.js";
+import PrivateRoute from "./components/PrivateRoute.js";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,7 +17,7 @@ const router = createBrowserRouter(
       <Route index element={<IndexPage />} />
       <Route path="/dashboard">
         <Route index element={<DashboardPage />} />
-        <Route path="add-dataset" element={<AddDatasetPage />} />
+        <Route path="add-dataset" element={<PrivateRoute element={<AddDatasetPage />} />} />
       </Route>
       <Route path="/community">
         <Route index element={<Community />} />
